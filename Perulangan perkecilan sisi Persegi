@@ -1,0 +1,22 @@
+import math
+print ('	#################################################')
+print ('	#  Program Perulangan Perkecilan Skala Persegi  #')
+print ('	#################################################\n')
+while (True) :
+	ss = int(input('Masukan panjang sisi	: '))
+	kali = int(input('Berapa kali perkecilan	: '))
+	print ('\nSisi Awal      = '), ss
+	for a in range(kali):
+		a = a+1
+		ss = ss / 2
+		kdr = ss*ss 
+		akar = math.sqrt((kdr + kdr))
+		ss = round(akar,2)
+		print ('Pengecilan '), a, (' = '), ss
+	ulang = str(raw_input('\nApakah ingin mengulang? y = ya/t = tidak: '))
+	if ulang == ('t'):
+		break
+	if ulang == ('y'):
+		continue
+	else:
+		break
